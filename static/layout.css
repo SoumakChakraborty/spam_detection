@@ -1,0 +1,37 @@
+#main
+{
+    width:50%;
+    margin: auto;
+    margin-top:200px;
+    border-radius:5px;
+    outline: none;
+}
+#message
+{
+    width:100%;
+    height:50%;
+}
+#sub
+{
+    border:1px gray solid;
+    width:50%;
+    margin-top:10px;
+    margin-left:180px;
+    padding:5px;
+    border-radius:5px;
+}
+#res
+{
+    width:20%;
+    margin:auto;
+    text-align: center;
+    font-weight:bold;
+}
+#title
+{
+    margin:auto;
+    margin-top:10px;
+    text-align: center;
+    font-size:1.5em;
+    padding:5px;
+}

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Spam detection</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='layout.css')}}">
+    </head>
+    <body>
+           <div id="title">
+               <p>Spam Detection system</p>
+           </div>
+           <div id="main">
+            <form action="/" method="POST">
+            <textarea name="message" id="message" required></textarea><br>
+            <input type="submit" id='sub' value="Detect">
+            </form>
+           </div>
+           <div id="res">
+            {% if message %}    
+            <p>{{message}}</p>
+           {% else %}
+           <p>Input not provided</p>
+           {% endif %}  
+           </div>
+    </body>
+</html>
