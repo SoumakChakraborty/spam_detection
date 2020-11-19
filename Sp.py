@@ -57,34 +57,12 @@ X_samp,Y_samp=RM.fit_sample(X_f,Y)
 
 
 
-X_train,X_test,Y_train,Y_test=train_test_split(X_samp,Y_samp,train_size=.70)
-
-
+#X_train,X_test,Y_train,Y_test=train_test_split(X_samp,Y_samp,train_size=.70)
 
 
 model=MultinomialNB()
 
-
-
-
-model.fit(X_train,Y_train)
-
-
-
-
-Y_train_pred=model.predict(X_train)
-
-
-
-
-Y_test_pred=model.predict(X_test)
-
-
-
-
-print(metrics.classification_report(Y_test,Y_test_pred))
-
-
+model.fit(X_samp,Y_samp)
 
 pickle.dump(model,open('spam.pkl','wb'))
 pickle.dump(TF,open('vectorizer.pkl','wb'))
